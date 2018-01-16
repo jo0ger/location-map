@@ -4,11 +4,11 @@
   "description": "my location map",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "pm2 deploy ecosystem.config.js production"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jo0ger/location-map.git"
+    "type": "https",
+    "url": "https://github.com/jo0ger/location-map.git"
   },
   "keywords": [
     "jooger.me",
