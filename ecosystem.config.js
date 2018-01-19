@@ -16,6 +16,7 @@ module.exports = {
       ref: 'origin/master',
       repo: packageInfo.repository.url,
       path: '/root/www/' + packageInfo.name,
+      'post-deploy': 'git pull'
     }
   }
 }

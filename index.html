@@ -21,10 +21,10 @@
 <body>
   <div id="container"></div>
   <script>
-    var location = [116.489016, 40.00766]
+    var coordinate = [116.489016, 40.00766]
     var map = new AMap.Map('container', {
       resizeEnable: true,
-      center: location,
+      center: coordinate,
       zoom: 8
     });
     map.setLang('zh_en');
@@ -39,7 +39,7 @@
     }, 1);
     //右键显示全国范围
     contextMenu.addItem("缩至全国", function (e) {
-      map.setZoomAndCenter(4, location);
+      map.setZoomAndCenter(4, coordinate);
     }, 2);
 
     //地图绑定鼠标右击事件——弹出右键菜单
